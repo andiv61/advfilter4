@@ -1,0 +1,79 @@
+/* Сброс стандартных стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.product-content {
+    padding: 20px;
+}
+
+.product-card h3 {
+    color: #2980b9;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.product-card p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.buy-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.buy-button:hover {
+    background: #2980b9;
+}
